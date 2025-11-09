@@ -1,0 +1,57 @@
+# pyproject.toml
+[project]
+name = "sonus-realtime"
+version = "0.1.0"
+description = "Realtime voice companion (server)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Hojin Kim" }]
+
+dependencies = [
+  "flask~=3.0",
+  "flask-cors~=4.0",
+  "openai>=1.0.0",
+  "fastapi~=0.115",
+  "uvicorn[standard]~=0.30",
+  "orjson~=3.10",
+  "faster-whisper~=1.0",
+  "soundfile~=0.12",
+  "librosa~=0.10",
+  "transformers~=4.44",
+  "accelerate~=0.34",
+  "pydub~=0.25",
+  "hf_transfer>=0.1.6",
+  "numpy<2.0",          
+  "pyzmq<26",           
+  "setuptools<81",      
+  "cn2an",
+  "inflect",
+  "s3tokenizer",
+  "diffusers~=0.30",
+  "conformer",        
+  "pykakasi",
+  "resemble-perth",
+  "pkuseg",
+  "jieba",
+  "piper_phonemize",
+  "pypinyin",
+  "huggingface_hub",
+  "safetensors",
+  "tensorboard",
+  "vocos",
+  "opuslib",
+  "lhotse",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff~=0.6",
+  "black~=24.8",
+  "pytest~=8.3",
+  "pre-commit~=3.8",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
