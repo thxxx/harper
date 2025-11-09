@@ -4,6 +4,8 @@
 It implements a full voice-based conversation loop with speech recognition, text generation, and speech synthesis, all running locally or via APIs.
 Shout out to Chris Hong! 😊
 
+Please watch [demo video 🎬](https://www.loom.com/share/3ef0ffd2844a4f148e087a7e6bd69b9b)!
+
 <br />
 
 **Features Implemented**
